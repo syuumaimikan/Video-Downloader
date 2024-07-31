@@ -92,7 +92,7 @@ class Application(ttkb.Frame):
         url = self.intxt.get()
         self.intxt.delete(0, tk.END)
 
-        path = "E:/ffmpeg-master-latest-win64-gpl-shared/bin"
+        path = "ffmpegのbinフォルダのパス"
         os.environ["PATH"] += "" if path in os.environ["PATH"] else ";" + path
 
         options = {
